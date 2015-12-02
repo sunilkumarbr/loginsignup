@@ -1,0 +1,31 @@
+
+<html>
+	<head>
+		<title>signup</title>
+		<link href="/css/style.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<h1>Signup form using mongoDB</h1>
+		<div id="signup">
+		<h2>Signup</h2>
+			<p style="color:#FF5722"><%=found%></p>
+			<form id="form" action="/signup"  method="post">
+				<label id="nameLabel">Username*<br/>
+					<input type="text" id="username" name="name" value='' onfocusout="outFinal(this);" onfocus="focusFinal(this);">
+				</label><br /><br />
+				<label  id="emailLabel">Email*<br/>
+					<input type="text" id="email" name="email" value='' onfocusout="outFinal(this);" onfocus="focusFinal(this);">
+				</label><br /><br />
+				<label id="passwordLabel">Password*<br/>
+					<input type="password" id="password" name="password" value='' onfocusout="outFinal(this);" onfocus="focusFinal(this);">
+				</label><br /><br />
+				<button type="submit" name="submit" value="submit">SIGNUP</button>
+
+			</form>
+		</div>
+
+	<script src="/javascripts/signup.js" type="text/javascript" charset="utf-8" async defer></script>
+
+	</body>
+</html>

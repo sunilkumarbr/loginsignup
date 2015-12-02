@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>LOGIN</title>
+		<link href="/css/style.css" rel="stylesheet" type="text/css">
+	</head>
+<style>
+	body{
+		color:red;
+	}
+</style>
+	<body>
+		<h1>Login form using mysql</h1>
+		<div id="login">
+
+			<h2>LOGIN</h2>
+		
+
+			<p style="color:#FF5722"><%=user%></p>
+			<form id="form" action="/login" method="post">
+				<label id="nameLabel">Username*<br/>
+				<input type="text" id="username" name="username" value='' onfocusout="outFinal(this);" onfocus="focusFinal(this);">
+				</label><br /><br />
+				<span style="color:red" id='nameSpan'></span>
+				<label id="passwordLabel"> Password*<br/>
+				<input type="password" id="password" name="password" value='' onfocusout="outFinal(this);" onfocus="focusFinal(this);">
+				</label><br /><br />
+				<span style="color:red" id='passwordSpan'></span><br/>
+				<button type="submit" name="submit" value="submit" id="submit">LOGIN</button>
+			</form>
+
+			<p ><pre style="color:white">OR  <a href="signup" "email me">Signup</a></pre></p>
+			
+		</div>
+	</body>
+
+<script src="/javascripts/login.js" type="text/javascript" charset="utf-8" async defer></script>
+</html>
